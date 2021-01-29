@@ -1,16 +1,20 @@
-import { Scene } from 'phaser';
+import Phaser from 'phaser';
 
-class BootScene extends Scene {
+class BootScene extends Phaser.Scene {
   constructor() {
-    super('scene-boot');
+    super('BootScene');
   }
 
   preload() {
-    this.load.image('cat-like', 'assets/cat-like-creature.png');
+    this.loadTileMap();
   }
 
   create() {
-    this.scene.start('scene-game');
+    this.scene.start('TitleScene');
+  }
+
+  loadTileMap() {
+    this.load.tilemapTiledJSON('map', '../assets/level/large_level.json');
   }
 }
 

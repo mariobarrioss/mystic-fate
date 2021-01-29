@@ -1,26 +1,26 @@
 import './styles/main.css';
 import Phaser from 'phaser';
 import BootScene from './scenes/BootScene';
-import GameScene from './scenes/GameScene';
+import TitleScene from './scenes/TitleScene';
 
 const canvas = document.querySelector('#game-canvas');
 const config = {
   type: Phaser.WEBGL,
-  width: 320,
-  height: 240,
+  width: 800,
+  height: 600,
   canvas,
-  zoom: 2,
   pixelArt: true,
+  roundPixels: true,
   physics: {
     default: 'arcade',
     arcade: {
       gravity: { y: 0 },
-      debug: true,
+      debug: false,
     },
   },
   scene: [
     BootScene,
-    GameScene,
+    TitleScene,
   ],
 };
 
