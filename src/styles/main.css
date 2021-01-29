@@ -1,8 +1,8 @@
 body {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
 }
 
 .game-container {
+  padding: 20vh 0;
   text-align: center;
-  vertical-align: middle;
 }
