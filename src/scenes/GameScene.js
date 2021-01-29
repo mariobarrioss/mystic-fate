@@ -8,6 +8,10 @@ class GameScene extends Phaser.Scene {
     super('GameScene');
   }
 
+  init() {
+    this.scene.launch('UIScene');
+  }
+
   create() {
     this.createMap();
     this.createGameManager();

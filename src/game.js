@@ -3,6 +3,7 @@ import Phaser from 'phaser';
 import BootScene from './scenes/BootScene';
 import TitleScene from './scenes/TitleScene';
 import GameScene from './scenes/GameScene';
+import UIScene from './scenes/UIScene';
 
 const canvas = document.querySelector('#game-canvas');
 const config = {
@@ -23,6 +24,7 @@ const config = {
     BootScene,
     TitleScene,
     GameScene,
+    UIScene,
   ],
 };
 
