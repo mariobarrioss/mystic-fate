@@ -6,11 +6,17 @@ class BootScene extends Phaser.Scene {
   }
 
   preload() {
+    this.loadImages();
     this.loadTileMap();
   }
 
   create() {
     this.scene.start('TitleScene');
+  }
+
+  loadImages() {
+    this.load.image('button1', '../assets/images/ui/blue_button01.png');
+    this.load.image('button2', '../assets/images/ui/blue_button02.png');
   }
 
   loadTileMap() {
