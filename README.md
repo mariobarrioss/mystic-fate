@@ -5,10 +5,10 @@
 
 Mystic Fate is an RPG game built for educational purposes using the Phaser.js library. Players must collect the coins of fate while fighting different monsters in an enchanted land.
 
-![screenshot](./docs/screenshot.jpg)
+![screenshot](./docs/screenshot.png)
 
 ## Live Demo
-[Mystic Fate](https://quirky-elion-d1808c.netlify.app/)
+[Mystic Fate](https://priceless-kalam-4cb4c2.netlify.app/)
 
 ## Getting Started
 
